@@ -1,12 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { Navigation } from './src/screens/Navigation/Navigation';
 import { Login } from './src/screens/Login/Login';
 import { ResetPassword } from './src/screens/ResetPassword/ResetPassword';
-import { SetPassword } from './src/screens/setPassword/setPassword';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
+import { SetPassword } from './src/screens/setPassword/setPassword';
 
 //instancia do StackNavigator
 
