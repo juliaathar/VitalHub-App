@@ -4,6 +4,7 @@ import { Navigation } from './src/screens/Navigation/Navigation';
 import { Login } from './src/screens/Login/Login';
 import { ResetPassword } from './src/screens/ResetPassword/ResetPassword';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
+import {VerifyEmail} from './src/screens/VerifyEmail/VerifyEmail'
 import { SetPassword } from './src/screens/setPassword/setPassword';
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
 import { Quicksand_500Medium } from '@expo-google-fonts/quicksand';
@@ -81,6 +82,15 @@ export default function App() {
           component={CreateAccount}
           //título da tela
           options={{ title: 'CreateAccount' }}
+        />
+
+        <Stack.Screen
+          //nome da tela
+          name='VerifyEmail'
+          //componente que sera chamado   
+          component={VerifyEmail}
+          //título da tela
+          options={{ title: 'VerifyEmail' }}
         />
 
       </Stack.Navigator>

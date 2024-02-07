@@ -41,7 +41,7 @@ export const Login = () => {
             <CreateAccount>
                 <TextAccount>Não tem conta?</TextAccount>
                 <LinkAccount>Crie uma conta agora!</LinkAccount>
-            </CreateAccount>
+            </CreateAccount> 
 
         </Container>
     )
