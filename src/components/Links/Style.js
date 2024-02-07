@@ -8,5 +8,5 @@ export const LinkMedium = styled.Text`
     margin-left: 20;
     align-self: flex-start;
     text-decoration: underline;
-    margin-bottom: 30;
+    margin-bottom: 15;
 `
