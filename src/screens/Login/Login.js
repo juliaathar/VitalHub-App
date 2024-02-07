@@ -5,6 +5,7 @@ import { Logo } from "../../components/Logo/Style"
 import { Input } from "../../components/Input/Style"
 import { LinkMedium } from "../../components/Links/Style"
 import { Button, ButtonGoogle, ButtonIcon, ButtonTitle, ButtonTitleGoogle } from "../../components/Buttons/Style"
+import { CreateAccount, LinkAccount, TextAccount } from "../../components/CreateAccount/Style"
 
 
 export const Login = () => {
@@ -37,9 +38,10 @@ export const Login = () => {
                 <ButtonTitleGoogle>Entrar com o Google</ButtonTitleGoogle>
             </ButtonGoogle>
 
-            {/* <ContentAccount>
-                <TextAccount></TextAccount>
-            </ContentAccount> */}
+            <CreateAccount>
+                <TextAccount>Não tem conta?</TextAccount>
+                <LinkAccount>Crie uma conta agora!</LinkAccount>
+            </CreateAccount>
 
         </Container>
     )

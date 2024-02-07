@@ -12,14 +12,14 @@ export const Button = styled.TouchableOpacity`
 
 export const ButtonTitle = styled.Text`
     font-family: 'MontserratAlternates_700Bold';
-    font-size: 14;
+    font-size: 16;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
 `
 
 export const ButtonGoogle = styled(Button)`
-    background-color: #FFFFFF;
+    background-color: #fafafa;
     border: #496BBA;
     flex-direction: row;
 `
