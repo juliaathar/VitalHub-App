@@ -8,7 +8,7 @@ import { Button, ButtonGoogle, ButtonIcon, ButtonTitle, ButtonTitleGoogle } from
 import { CreateAccount, LinkAccount, TextAccount } from "../../components/CreateAccount/Style"
 
 
-export const Login = () => {
+export const Login = ({navigation}) => {
     return (
         <Container>
 
@@ -40,7 +40,7 @@ export const Login = () => {
 
             <CreateAccount>
                 <TextAccount>Não tem conta?</TextAccount>
-                <LinkAccount>Crie uma conta agora!</LinkAccount>
+                <LinkAccount onPress = {() => navigation.navigate("CreateAccount")}>Crie uma conta agora!</LinkAccount>
             </CreateAccount> 
 
         </Container>
