@@ -11,10 +11,9 @@ export const DefaultText = styled.Text`
     color: #5F5C6B;
     text-align: center;
     width: 320;
-    margin-top: 15;
-    margin-bottom: 5;
 `
 
 export const DefaultTextBlue = styled(DefaultText)`
     color: #496BBA;
+    font-family: 'Quicksand_600SemiBold';
 `

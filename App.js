@@ -7,7 +7,7 @@ import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
 import {VerifyEmail} from './src/screens/VerifyEmail/VerifyEmail'
 import { SetPassword } from './src/screens/setPassword/setPassword';
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
-import { Quicksand_500Medium } from '@expo-google-fonts/quicksand';
+import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
 
 //instancia do StackNavigator
 
@@ -20,7 +20,8 @@ export default function App() {
     MontserratAlternates_600SemiBold,
     MontserratAlternates_500Medium,
     MontserratAlternates_700Bold,
-    Quicksand_500Medium
+    Quicksand_500Medium,
+    Quicksand_600SemiBold
   })
 
 

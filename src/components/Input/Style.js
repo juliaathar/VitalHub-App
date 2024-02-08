@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Input = styled.TextInput.attrs({placeholderTextColor: '#34898f'})`
+export const Input = styled.TextInput.attrs({ placeholderTextColor: '#34898f' })`
     width: 90%;
     height: 53px;
     padding: 16px;
@@ -11,4 +11,19 @@ export const Input = styled.TextInput.attrs({placeholderTextColor: '#34898f'})`
     color: #34898f;
     font-size: 16;
     font-family: 'MontserratAlternates_600SemiBold';
+`
+
+export const InputNumber = styled(Input)`
+    width: 65;
+    height: 65;
+    font-size: 40;
+    text-align: center;
+`
+
+export const BoxInputNumber = styled.View`
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 10;
+ margin-bottom: 15;
 `
