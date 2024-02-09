@@ -10,6 +10,7 @@ import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Med
 import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
 import { IconHeader } from './src/components/IconHeader/Style';
 import { UserProfile } from './src/screens/UserProfile/UserProfile';
+import { Profile } from './src/screens/Profile/Profile';
 
 //instancia do StackNavigator
 
@@ -105,6 +106,14 @@ export default function App() {
           component={UserProfile}
           //título da tela
           options={{ title: 'UserProfile' }}
+        />
+        <Stack.Screen
+          //nome da tela
+          name='Profile'
+          //componente que sera chamado   
+          component={Profile}
+          //título da tela
+          options={{ title: 'Profile' }}
         />
 
       </Stack.Navigator>

@@ -39,3 +39,15 @@ export const InputDescription = styled(Input)`
     height: 121;
     text-align: start;
 `
+export const InputProfile = styled(Input).attrs({
+    placeholderTextColor: '#33303E',
+  })`
+    textAlign: 'left';
+    background-color: #F5F3F3;
+    border: none;
+    color: #33303E;
+  `;
+
+export const InputProfileBox = styled.View`
+    flex-direction: row;
+`

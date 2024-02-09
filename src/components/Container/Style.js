@@ -9,6 +9,7 @@ export const Container = styled.SafeAreaView`
 `
 export const ContainerUser = styled(Container)`
     gap: 10;
+    justify-content: baseline;
 `
 export const ContainerScroll = styled.ScrollView.attrs({
     showsVerticalScrollIndicator: false,
