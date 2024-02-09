@@ -7,7 +7,7 @@ import { Input } from "../../components/Input/Style";
 import { Button, ButtonTitle } from "../../components/Buttons/Style";
 import { LinkBottom } from "../../components/LinkBottom/Style";
 
-export const CreateAccount = () => {
+export const CreateAccount = ({navigation}) => {
     return(
         <Container>
             <Logo source={require('../../assets/logo.png')} />
@@ -30,7 +30,7 @@ export const CreateAccount = () => {
                 <ButtonTitle>Cadastrar</ButtonTitle>
             </Button>
 
-            <LinkBottom>Cancelar</LinkBottom>
+            <LinkBottom onPress = {() => navigation.navigate("Login")}>Cancelar</LinkBottom>
         </Container>
     );
 }

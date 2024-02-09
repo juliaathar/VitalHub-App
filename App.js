@@ -4,10 +4,12 @@ import { Navigation } from './src/screens/Navigation/Navigation';
 import { Login } from './src/screens/Login/Login';
 import { ResetPassword } from './src/screens/ResetPassword/ResetPassword';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
-import {VerifyEmail} from './src/screens/VerifyEmail/VerifyEmail'
+import { VerifyEmail } from './src/screens/VerifyEmail/VerifyEmail'
 import { SetPassword } from './src/screens/setPassword/setPassword';
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
 import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
+import { IconHeader } from './src/components/IconHeader/Style';
+import { UserProfile } from './src/screens/UserProfile/UserProfile';
 
 //instancia do StackNavigator
 
@@ -46,7 +48,9 @@ export default function App() {
           //componente que sera chamado   
           component={Navigation}
           //título da tela
-          options={{ title: 'Navigation' }}
+          options={{
+            title: 'Navigation',
+          }}
         />
 
         <Stack.Screen
@@ -92,6 +96,15 @@ export default function App() {
           component={VerifyEmail}
           //título da tela
           options={{ title: 'VerifyEmail' }}
+        />
+
+        <Stack.Screen
+          //nome da tela
+          name='UserProfile'
+          //componente que sera chamado   
+          component={UserProfile}
+          //título da tela
+          options={{ title: 'UserProfile' }}
         />
 
       </Stack.Navigator>

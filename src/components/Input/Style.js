@@ -21,9 +21,21 @@ export const InputNumber = styled(Input)`
 `
 
 export const BoxInputNumber = styled.View`
- flex-direction: row;
- justify-content: center;
- align-items: center;
- gap: 10;
- margin-bottom: 15;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    margin-bottom: 15;
+`
+export const LabelInput = styled.Text`
+    font-family: 'Quicksand_600SemiBold';
+    font-size: 16;
+    text-align: start;
+    color: #33303E;
+    margin-top: 20;
+    width: 287;
+`
+export const InputDescription = styled(Input)`
+    height: 121;
+    text-align: start;
 `

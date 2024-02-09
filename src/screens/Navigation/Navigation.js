@@ -25,6 +25,10 @@ export const Navigation = ({navigation}) => {
                 title="Verify Email"
                 onPress = {() => navigation.navigate("VerifyEmail")}
             />
+            <Button
+                title="User Profile"
+                onPress = {() => navigation.navigate("UserProfile")}
+            />
         </View>
     );
 }
