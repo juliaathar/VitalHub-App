@@ -6,3 +6,7 @@ export const Title = styled.Text`
     font-family: 'MontserratAlternates_600SemiBold';
     margin-bottom: 5px;
 `
+export const TitleWhite = styled(Title)`
+    color: #FBFBFB;
+
+`

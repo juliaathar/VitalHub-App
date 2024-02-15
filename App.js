@@ -11,6 +11,7 @@ import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/q
 import { IconHeader } from './src/components/IconHeader/Style';
 import { UserProfile } from './src/screens/UserProfile/UserProfile';
 import { Profile } from './src/screens/Profile/Profile';
+import { PatientHome } from './src/screens/PatientHome/PatientHome';
 
 //instancia do StackNavigator
 
@@ -114,6 +115,14 @@ export default function App() {
           component={Profile}
           //título da tela
           options={{ title: 'Profile' }}
+        />
+        <Stack.Screen
+          //nome da tela
+          name='PatientHome'
+          //componente que sera chamado   
+          component={PatientHome}
+          //título da tela
+          options={{ title: 'PatientHome' }}
         />
 
       </Stack.Navigator>
