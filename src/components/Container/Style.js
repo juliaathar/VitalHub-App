@@ -8,7 +8,7 @@ export const Container = styled.SafeAreaView`
     align-items: center;
 `
 export const ContainerUser = styled(Container)`
-    gap: 10;
+    gap: 20;
     justify-content: baseline;
 `
 export const ContainerScroll = styled.ScrollView.attrs({

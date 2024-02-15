@@ -47,7 +47,22 @@ export const InputProfile = styled(Input).attrs({
     border: none;
     color: #33303E;
   `;
+export const SmallInput = styled(InputProfile).attrs({
+    placeholderTextColor: '#33303E',
+  })`
+    textAlign: 'left';
+    background-color: #F5F3F3;
+    border: none;
+    color: #33303E;
+    width:144px;
+  `;
 
 export const InputProfileBox = styled.View`
     flex-direction: row;
-`
+    gap: 10;
+    margin-bottom: 46;
+` 
+export const InputBox = styled.View`
+    width: 144;
+    height: 80;
+` 
