@@ -9,3 +9,8 @@ export const LinkBottom = styled.Text`
     text-decoration: underline;
     margin-top: 30;
 `
+export const LinkCancel = styled.Text`
+ font-size: 12;
+    color: #C81D25;
+    font-family: 'MontserratAlternates_500Medium';
+`

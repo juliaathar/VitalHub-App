@@ -4,23 +4,39 @@ import { GradientBackground, HomeHeader, TextHome } from "../../components/HomeH
 import { UserIcon } from "../../components/UserIcon/Style";
 import { TitleWhite } from "../../components/Title/Style";
 import CalendarList from "../../components/CalendarList/CalendarList";
+import { ButtonStatus, ButtonStatusTitle, ButtonTitle, StatusBox } from "../../components/Buttons/Style";
+import { Card } from "../../components/Card/Card";
 export const PatientHome = () => {
-    return(
+    return (
         <ContainerUser>
             <GradientBackground>
-            <HomeHeader>
-                <UserIcon source={require('../../assets/user.png')}/>
-                <View>
-                <TextHome>Bem-vindo</TextHome>
-                <TitleWhite>Richard Kosta</TitleWhite>
-                </View>
+                <HomeHeader>
+                    <UserIcon source={require('../../assets/user.png')} />
+                    <View>
+                        <TextHome>Bem-vindo</TextHome>
+                        <TitleWhite>Richard Kosta</TitleWhite>
+                    </View>
 
-                <Image style={{ marginLeft: 90 }} source={require('../../assets/bell.png')}/>
-            </HomeHeader>
+                    <Image style={{ marginLeft: 90 }} source={require('../../assets/bell.png')} />
+                </HomeHeader>
             </GradientBackground>
-            
-            <CalendarList/>
-   
+
+            <CalendarList />
+
+            <StatusBox>
+                <ButtonStatus>
+                    <ButtonStatusTitle>Agendadas</ButtonStatusTitle>
+                </ButtonStatus>
+                <ButtonStatus>
+                    <ButtonStatusTitle>Realizadas</ButtonStatusTitle>
+                </ButtonStatus>
+                <ButtonStatus>
+                    <ButtonStatusTitle>Canceladas</ButtonStatusTitle>
+                </ButtonStatus>
+            </StatusBox>
+
+            <Card/>
+
         </ContainerUser>
     );
 }

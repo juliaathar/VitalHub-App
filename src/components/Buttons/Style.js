@@ -33,3 +33,25 @@ export const ButtonIcon = styled.Image`
     height: 20;
     margin-right: 27;
 `
+
+export const ButtonStatus = styled(Button)`
+    background-color: #fafafa;
+    border: 2px solid #496BBA;
+    flex-direction: row;
+    width: 100;
+    height: 40;
+`
+
+export const ButtonStatusTitle = styled.Text`
+    font-family: 'MontserratAlternates_600SemiBold';
+    font-size: 12;
+    color: #496BBA;
+    text-align: center;
+`
+
+export const StatusBox = styled.View`
+flex-direction: row;
+width: 320;
+justify-content: space-between;
+`
+

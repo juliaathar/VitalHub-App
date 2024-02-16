@@ -16,6 +16,9 @@ export const TextHome = styled.Text`
     font-size: 16;
     color: #4E4B59;
 `
+export const TypeExam = styled(TextHome)`
+    font-family: 'Quicksand_600SemiBold';
+`
 
 export const GradientBackground = styled(LinearGradient).attrs({
     colors: ['#60BFC5', '#496BBA'],

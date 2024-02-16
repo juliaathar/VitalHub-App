@@ -8,5 +8,4 @@ export const Title = styled.Text`
 `
 export const TitleWhite = styled(Title)`
     color: #FBFBFB;
-
 `
