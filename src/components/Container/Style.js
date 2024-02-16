@@ -2,13 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.SafeAreaView`
     flex: 1;
-    align-items: center;
     background-color: #fafafa;
     justify-content: center;
     align-items: center;
 `
 export const ContainerUser = styled(Container)`
-    gap: 20;
     justify-content: baseline;
 `
 export const ContainerScroll = styled.ScrollView.attrs({

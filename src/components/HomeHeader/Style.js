@@ -19,8 +19,8 @@ export const TextHome = styled.Text`
 
 export const GradientBackground = styled(LinearGradient).attrs({
     colors: ['#60BFC5', '#496BBA'],
-    start: { x: 0, y: 0 },
-    end: { x: 1, y: 1 }
+    start: { x: -0.05, y: 1.08 },
+    end: { x: 1, y: 0 }
 })`
 
   width: 100%;

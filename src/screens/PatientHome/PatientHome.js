@@ -3,6 +3,7 @@ import { ContainerUser } from "../../components/Container/Style";
 import { GradientBackground, HomeHeader, TextHome } from "../../components/HomeHeader/Style";
 import { UserIcon } from "../../components/UserIcon/Style";
 import { TitleWhite } from "../../components/Title/Style";
+import CalendarList from "../../components/CalendarList/CalendarList";
 export const PatientHome = () => {
     return(
         <ContainerUser>
@@ -17,6 +18,8 @@ export const PatientHome = () => {
                 <Image style={{ marginLeft: 90 }} source={require('../../assets/bell.png')}/>
             </HomeHeader>
             </GradientBackground>
+            
+            <CalendarList/>
    
         </ContainerUser>
     );
