@@ -12,7 +12,9 @@ import { StatusBox } from "../../components/Buttons/Style";
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
     { id: 2, nome: "Edu", situacao: "realizado" },
-    { id: 3, nome: "Lucão", situacao: "cancelado" }
+    { id: 3, nome: "Lucão", situacao: "cancelado" },
+    { id: 3, nome: "Gabi", situacao: "cancelado" },
+    { id: 3, nome: "Júlia", situacao: "pendente" }
 ]
 export const PatientHome = () => {
 
@@ -57,6 +59,8 @@ export const PatientHome = () => {
                 />
             </StatusBox>
 
+            <Card />
+            <Card />
             <Card />
 
         </ContainerUser>

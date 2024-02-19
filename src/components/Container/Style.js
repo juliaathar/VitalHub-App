@@ -9,17 +9,26 @@ export const Container = styled.SafeAreaView`
 export const ContainerUser = styled(Container)`
     justify-content: baseline;
 `
-export const ContainerCard = styled.View`
-    width: 320;
-    height: 102;
+export const ContainerCard = styled.View.attrs({
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 4,
+      height: 4,
+    },
+    shadowOpacity: 0.08,
+    shadowRadius: 15,
+    elevation: 4,
+  })`
+    width: 320px;
+    height: 102px;
     border-radius: 5px;
     padding: 10px;
     background-color: #FFFFFF;
     flex-direction: row;
     align-items: center;
-    gap: 10;
-    margin-top: 20;
-`
+    gap: 10px;
+    margin-top: 20px;
+  `;
 export const CardData = styled.View`
     width: 203;
     height: 80;
