@@ -4,9 +4,21 @@ import { GradientBackground, HomeHeader, TextHome } from "../../components/HomeH
 import { UserIcon } from "../../components/UserIcon/Style";
 import { TitleWhite } from "../../components/Title/Style";
 import CalendarList from "../../components/CalendarList/CalendarList";
-import { ButtonStatus, ButtonStatusTitle, ButtonTitle, StatusBox } from "../../components/Buttons/Style";
 import { Card } from "../../components/Card/Card";
+import { useState } from "react";
+import { HomeButton } from "../../components/HomeButton/HomeButton";
+import { StatusBox } from "../../components/Buttons/Style";
+
+const Consultas = [
+    { id: 1, nome: "Carlos", situacao: "pendente" },
+    { id: 2, nome: "Edu", situacao: "realizado" },
+    { id: 3, nome: "Lucão", situacao: "cancelado" }
+]
 export const PatientHome = () => {
+
+    const [statusLista, setStatusLista] = useState("pendente")
+
+
     return (
         <ContainerUser>
             <GradientBackground>
@@ -24,18 +36,28 @@ export const PatientHome = () => {
             <CalendarList />
 
             <StatusBox>
-                <ButtonStatus>
-                    <ButtonStatusTitle>Agendadas</ButtonStatusTitle>
-                </ButtonStatus>
-                <ButtonStatus>
-                    <ButtonStatusTitle>Realizadas</ButtonStatusTitle>
-                </ButtonStatus>
-                <ButtonStatus>
-                    <ButtonStatusTitle>Canceladas</ButtonStatusTitle>
-                </ButtonStatus>
+              
+            <HomeButton
+                    textButton={"Agendadas"}
+                    clickButton={statusLista === "pendente"}
+                    onPress={() => setStatusLista("pendente")}
+                />
+
+                <HomeButton
+                    textButton={"Realizadas"}
+                    clickButton={statusLista === "realizado"}
+                    onPress={() => setStatusLista("realizado")}
+                />
+                
+
+                <HomeButton
+                    textButton={"Canceladas"}
+                    clickButton={statusLista === "cancelado"}
+                    onPress={() => setStatusLista("cancelado")}
+                />
             </StatusBox>
 
-            <Card/>
+            <Card />
 
         </ContainerUser>
     );

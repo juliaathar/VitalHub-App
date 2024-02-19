@@ -18,11 +18,13 @@ export const Card = () => {
                     <TextHome>•</TextHome>
                     <TypeExam>Rotina</TypeExam>
                 </View>
-                <HourCard>
-                    <VectorHour source={require('../../assets/time.png')} />
-                    <TextHour>14:00</TextHour>
-                </HourCard>
-                <LinkCancel>Cancelar</LinkCancel>
+                <View style={{ flexDirection: "row", gap: 50, alignItems: "center" }}>
+                    <HourCard>
+                        <VectorHour source={require('../../assets/time.png')} />
+                        <TextHour>14:00</TextHour>
+                    </HourCard>
+                    <LinkCancel>Cancelar</LinkCancel>
+                </View>
             </CardData>
         </ContainerCard>
     );

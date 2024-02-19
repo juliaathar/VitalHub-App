@@ -18,7 +18,7 @@ export const ContainerCard = styled.View`
     flex-direction: row;
     align-items: center;
     gap: 10;
-    /* box-shadow: 4px 4px 5px black; */
+    margin-top: 20;
 `
 export const CardData = styled.View`
     width: 203;
