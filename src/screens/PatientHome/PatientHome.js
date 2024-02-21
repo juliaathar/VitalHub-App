@@ -8,6 +8,8 @@ import { Card } from "../../components/Card/Card";
 import { useState } from "react";
 import { HomeButton } from "../../components/HomeButton/HomeButton";
 import { StatusBox } from "../../components/Buttons/Style";
+import { List } from "../../components/List/Style";
+import CancelModal from "../../components/CancelModal/CancelModal";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -20,15 +22,19 @@ export const PatientHome = () => {
 
     const [statusLista, setStatusLista] = useState("pendente")
 
+    //state para os modais 
+    const [showModalCancel, setShowModalCancel] = useState(false);
+    const [showModalAppointment, setShowModalAppointment] = useState(false);
+
 
     return (
         <ContainerUser>
             <GradientBackground>
                 <HomeHeader>
-                    <UserIcon source={require('../../assets/user.png')} />
+                    <UserIcon source={{ uri: "https://github.com/gabrielarosa1309.png" }} />
                     <View>
-                        <TextHome>Bem-vindo</TextHome>
-                        <TitleWhite>Richard Kosta</TitleWhite>
+                        <TextHome>Bem-vinda</TextHome>
+                        <TitleWhite>Gabriela Ramos</TitleWhite>
                     </View>
 
                     <Image style={{ marginLeft: 90 }} source={require('../../assets/bell.png')} />
@@ -38,8 +44,8 @@ export const PatientHome = () => {
             <CalendarList />
 
             <StatusBox>
-              
-            <HomeButton
+
+                <HomeButton
                     textButton={"Agendadas"}
                     clickButton={statusLista === "pendente"}
                     onPress={() => setStatusLista("pendente")}
@@ -50,7 +56,7 @@ export const PatientHome = () => {
                     clickButton={statusLista === "realizado"}
                     onPress={() => setStatusLista("realizado")}
                 />
-                
+
 
                 <HomeButton
                     textButton={"Canceladas"}
@@ -59,9 +65,26 @@ export const PatientHome = () => {
                 />
             </StatusBox>
 
-            <Card />
-            <Card />
-            <Card />
+            <List
+                data={Consultas}
+                keyExtractor={(item) => item.id}
+
+                renderItem={({ item }) =>
+                    statusLista == item.situacao && (
+                        <Card
+                            situacao={item.situacao}
+                            onPressCancel={() => setShowModalCancel(true)}
+                            onPressAppointment={() => setShowModalAppointment(true)}
+                        />
+                    )
+                }
+            />
+
+            <CancelModal
+                visible={showModalCancel}
+                setShowModalCancel={setShowModalCancel}
+            
+            />
 
         </ContainerUser>
     );

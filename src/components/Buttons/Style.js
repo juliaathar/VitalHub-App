@@ -9,6 +9,10 @@ export const Button = styled.TouchableOpacity`
     align-items: center;
     margin-top: 15;
 `
+export const ButtonSecondary = styled(Button)`
+    background-color: transparent;
+    border: none;
+`
 
 export const ButtonTitle = styled.Text`
     font-family: 'MontserratAlternates_700Bold';
@@ -16,6 +20,12 @@ export const ButtonTitle = styled.Text`
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
+`
+
+export const ButtonTitleSecondary = styled(ButtonTitle)`
+    color: #344f8f;
+    text-transform: capitalize;
+    text-decoration: underline;
 `
 
 export const ButtonGoogle = styled(Button)`
