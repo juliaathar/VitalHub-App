@@ -13,6 +13,9 @@ export const ButtonSecondary = styled(Button)`
     background-color: transparent;
     border: none;
 `
+export const ButtonModal = styled(Button)`
+    width: 80%;
+`
 
 export const ButtonTitle = styled.Text`
     font-family: 'MontserratAlternates_700Bold';
