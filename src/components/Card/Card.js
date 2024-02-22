@@ -1,9 +1,9 @@
 import { CardData, ContainerCard } from "../Container/Style";
-import { CardIcon, UserIcon } from "../UserIcon/Style";
+import { CardIcon } from "../UserIcon/Style";
 import { Title } from "../Title/Style";
 import { TextHome, TypeExam } from "../HomeHeader/Style";
-import { Image, View } from "react-native";
-import { HourCard, TextHour, VectorHour } from "../HourCard/Style";
+import { View } from "react-native";
+import { HourCard, TextHour } from "../HourCard/Style";
 import { AntDesign } from "@expo/vector-icons"
 import { ButtonCard, ButtonText } from "./Style";
 

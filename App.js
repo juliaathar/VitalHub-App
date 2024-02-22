@@ -12,6 +12,7 @@ import { IconHeader } from './src/components/IconHeader/Style';
 import { UserProfile } from './src/screens/UserProfile/UserProfile';
 import { Profile } from './src/screens/Profile/Profile';
 import { PatientHome } from './src/screens/PatientHome/PatientHome';
+import { SelectClinic } from './src/screens/SelectClinic/SelectClinic';
 
 //instancia do StackNavigator
 
@@ -123,6 +124,14 @@ export default function App() {
           component={PatientHome}
           //título da tela
           options={{ title: 'PatientHome' }}
+        />
+        <Stack.Screen
+          //nome da tela
+          name='SelectClinic'
+          //componente que sera chamado   
+          component={SelectClinic}
+          //título da tela
+          options={{ title: 'SelectClinic' }}
         />
 
       </Stack.Navigator>

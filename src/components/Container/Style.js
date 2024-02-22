@@ -22,7 +22,7 @@ export const ContainerCard = styled.View.attrs({
     width: 320px;
     height: 102px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     background-color: #FFFFFF;
     flex-direction: row;
     align-items: center;
