@@ -22,7 +22,7 @@ export const Card = ({
                     <TextHome>•</TextHome>
                     <TypeExam>Rotina</TypeExam>
                 </View>
-                <View style={{ flexDirection: "row", gap: 50, alignItems: "center" }}>
+                <View style={{ flexDirection: "row", gap: 35, alignItems: "center" }}>
                     <HourCard situacao={situacao}>
                         <AntDesign
                             name="clockcircle"
