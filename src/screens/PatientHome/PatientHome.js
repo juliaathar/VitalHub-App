@@ -10,6 +10,7 @@ import { HomeButton } from "../../components/HomeButton/HomeButton";
 import { StatusBox } from "../../components/Buttons/Style";
 import { List } from "../../components/List/Style";
 import CancelModal from "../../components/CancelModal/CancelModal";
+import AppointmentModal from "../../components/AppointmentModal/AppointmentModal";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -83,7 +84,11 @@ export const PatientHome = () => {
             <CancelModal
                 visible={showModalCancel}
                 setShowModalCancel={setShowModalCancel}
-            
+            />
+
+            <AppointmentModal
+                visible={showModalAppointment}
+                setShowModalAppointment={setShowModalAppointment}
             />
 
         </ContainerUser>
