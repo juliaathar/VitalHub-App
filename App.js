@@ -15,6 +15,7 @@ import { PatientHome } from './src/screens/PatientHome/PatientHome';
 import { SelectClinic } from './src/screens/SelectClinic/SelectClinic';
 import { DoctorHome } from './src/screens/DoctorHome/DoctorHome';
 import { SelectDoctor } from './src/screens/SelectDoctor/SelectDoctor';
+import { SelectDate } from './src/screens/SelectDate/SelectDate';
 
 //instancia do StackNavigator
 
@@ -143,6 +144,7 @@ export default function App() {
           //título da tela
           options={{ title: 'SelectClinic' }}
         />
+
         <Stack.Screen
           //nome da tela
           name='SelectDoctor'
@@ -150,6 +152,15 @@ export default function App() {
           component={SelectDoctor}
           //título da tela
           options={{ title: 'SelectDoctor' }}
+        />
+
+        <Stack.Screen
+          //nome da tela
+          name='SelectDate'
+          //componente que sera chamado   
+          component={SelectDate}
+          //título da tela
+          options={{ title: 'SelectDate' }}
         />
 
       </Stack.Navigator>
