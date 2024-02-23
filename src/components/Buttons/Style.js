@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Button = styled.TouchableOpacity`
     width: 90%;
-    height: 44;
+    height: 44px;
     background-color: #496BBA;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    margin-top: 15;
+    margin-top: 15px;
 `
 export const ButtonSecondary = styled(Button)`
     background-color: transparent;
@@ -19,7 +19,7 @@ export const ButtonModal = styled(Button)`
 
 export const ButtonTitle = styled.Text`
     font-family: 'MontserratAlternates_700Bold';
-    font-size: 16;
+    font-size: 16px;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
@@ -42,9 +42,21 @@ export const ButtonTitleGoogle = styled(ButtonTitle)`
 `
 
 export const ButtonIcon = styled.Image`
-    width: 16;
-    height: 20;
-    margin-right: 27;
+    width: 16px;
+    height: 20px;
+    margin-right: 27px;
+`
+
+export const ButtonSchedule = styled.TouchableOpacity`
+    width: 60px;
+    height: 60px;
+    background-color: #49B3BA;
+    border-radius: 7px;
+    position: fixed;
+    left: 130px;
+    bottom: 40px;
+    justify-content: center;
+    align-items: center;
 `
 
 

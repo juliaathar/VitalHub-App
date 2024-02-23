@@ -1,17 +1,16 @@
 import { Image, Text, View } from "react-native";
 import { ContainerUser } from "../../components/Container/Style";
-import { GradientBackground, HomeHeader, TextHome } from "../../components/HomeHeader/Style";
+import { GradientBackground, HeaderData, HomeHeader, TextHome } from "../../components/HomeHeader/Style";
 import { UserIcon } from "../../components/UserIcon/Style";
 import { TitleWhite } from "../../components/Title/Style";
 import CalendarList from "../../components/CalendarList/CalendarList";
 import { Card } from "../../components/Card/Card";
 import { useState } from "react";
 import { HomeButton } from "../../components/HomeButton/HomeButton";
-import { ButtonSchedule, StatusBox } from "../../components/Buttons/Style";
+import { StatusBox } from "../../components/Buttons/Style";
 import { List } from "../../components/List/Style";
 import CancelModal from "../../components/CancelModal/CancelModal";
 import AppointmentModal from "../../components/AppointmentModal/AppointmentModal";
-import { FontAwesome } from "@expo/vector-icons"
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -20,7 +19,7 @@ const Consultas = [
     { id: 3, nome: "Gabi", situacao: "cancelado" },
     { id: 3, nome: "Júlia", situacao: "pendente" }
 ]
-export const PatientHome = () => {
+export const DoctorHome = () => {
 
     const [statusLista, setStatusLista] = useState("pendente")
 
@@ -33,10 +32,10 @@ export const PatientHome = () => {
         <ContainerUser>
             <GradientBackground>
                 <HomeHeader>
-                    <UserIcon source={{ uri: "https://github.com/gabrielarosa1309.png" }} />
+                    <UserIcon source={{ uri: "https://github.com/juliaathar.png" }} />
                     <View>
                         <TextHome>Bem-vinda</TextHome>
-                        <TitleWhite>Gabriela Ramos</TitleWhite>
+                        <TitleWhite>Dra. Júlia</TitleWhite>
                     </View>
 
                     <Image style={{ marginLeft: 90 }} source={require('../../assets/bell.png')} />
@@ -91,14 +90,6 @@ export const PatientHome = () => {
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
             />
-
-            <ButtonSchedule>
-                <FontAwesome
-                    name="stethoscope"
-                    size={32}
-                    color={'#FFFFFF'}
-                />
-            </ButtonSchedule>
 
         </ContainerUser>
     );

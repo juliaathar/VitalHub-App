@@ -1,5 +1,4 @@
-import { Button, ButtonTitle } from "../../components/Buttons/Style"
-import { Card } from "../../components/Card/Card"
+import { Button, ButtonSecondary, ButtonTitle, ButtonTitleSecondary } from "../../components/Buttons/Style"
 import { CardClinic } from "../../components/CardClinic/CardClinic"
 import { ContainerSelect, SelectClinicView } from "../../components/ContainerSelect/Style"
 import { Title } from "../../components/Title/Style"
@@ -29,6 +28,13 @@ export const SelectClinic = () => {
                         Continuar
                     </ButtonTitle>
                 </Button>
+
+                <ButtonSecondary>
+                    <ButtonTitleSecondary>
+                        Cancelar
+                    </ButtonTitleSecondary>
+                </ButtonSecondary>
+
             </SelectClinicView>
         </ContainerSelect>
     )

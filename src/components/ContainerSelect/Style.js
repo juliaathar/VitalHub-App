@@ -6,4 +6,6 @@ export const ContainerSelect = styled.View`
 `
 export const SelectClinicView = styled.View`
     align-items: center;
+    gap: 10px;
+    margin-top: 72px;
 `

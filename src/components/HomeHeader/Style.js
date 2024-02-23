@@ -21,9 +21,9 @@ export const TypeExam = styled(TextHome)`
 `
 
 export const GradientBackground = styled(LinearGradient).attrs({
-    colors: ['#60BFC5', '#496BBA'],
-    start: { x: -0.05, y: 1.08 },
-    end: { x: 1, y: 0 }
+  colors: ['#60BFC5', '#496BBA'],
+  start: { x: -0.05, y: 1.08 },
+  end: { x: 1, y: 0 }
 })`
 
   width: 100%;
