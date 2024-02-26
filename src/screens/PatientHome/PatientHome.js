@@ -7,11 +7,13 @@ import CalendarList from "../../components/CalendarList/CalendarList";
 import { Card } from "../../components/Card/Card";
 import { useState } from "react";
 import { HomeButton } from "../../components/HomeButton/HomeButton";
-import { ButtonSchedule, StatusBox } from "../../components/Buttons/Style";
+import { StatusBox } from "../../components/Buttons/Style";
 import { List } from "../../components/List/Style";
 import CancelModal from "../../components/CancelModal/CancelModal";
 import AppointmentModal from "../../components/AppointmentModal/AppointmentModal";
 import { FontAwesome } from "@expo/vector-icons"
+import { ButtonSchedule } from "../../components/ButtonSchedule/ButtonSchedule";
+import { SchedulingModal } from "../../components/SchedulingModal/SchedulingModal";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -20,13 +22,14 @@ const Consultas = [
     { id: 3, nome: "Gabi", situacao: "cancelado" },
     { id: 3, nome: "Júlia", situacao: "pendente" }
 ]
-export const PatientHome = () => {
+export const PatientHome = ({ navigation }) => {
 
     const [statusLista, setStatusLista] = useState("pendente")
 
     //state para os modais 
     const [showModalCancel, setShowModalCancel] = useState(false);
     const [showModalAppointment, setShowModalAppointment] = useState(false);
+    const [showSchedulingModal, setshowSchedulingModal] = useState(false);
 
 
     return (
@@ -92,13 +95,12 @@ export const PatientHome = () => {
                 setShowModalAppointment={setShowModalAppointment}
             />
 
-            <ButtonSchedule>
-                <FontAwesome
-                    name="stethoscope"
-                    size={32}
-                    color={'#FFFFFF'}
-                />
-            </ButtonSchedule>
+            <SchedulingModal
+                visible={showSchedulingModal}
+                setshowSchedulingModal={setshowSchedulingModal}
+            />
+
+            <ButtonSchedule onPress={() => setshowSchedulingModal(true)} />
 
         </ContainerUser>
     );

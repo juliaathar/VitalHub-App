@@ -9,6 +9,17 @@ export const Container = styled.SafeAreaView`
 export const ContainerUser = styled(Container)`
     justify-content: baseline;
 `
+
+export const ContainerScheduling = styled.View`
+    width: 100%;
+    height: 80%;
+    background-color: #FBFBFB;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+`
 export const ContainerCard = styled.View.attrs({
     shadowColor: "#000000",
     shadowOffset: {
