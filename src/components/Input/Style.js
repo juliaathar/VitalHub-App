@@ -47,6 +47,7 @@ export const InputProfile = styled(Input).attrs({
     border: none;
     color: #33303E;
   `;
+  
 export const SmallInput = styled(InputProfile).attrs({
     placeholderTextColor: '#33303E',
   })`

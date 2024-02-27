@@ -12,7 +12,7 @@ export const ContainerUser = styled(Container)`
 
 export const ContainerScheduling = styled.View`
     width: 100%;
-    height: 80%;
+    height: 50%;
     background-color: #FBFBFB;
     justify-content: center;
     align-items: center;
