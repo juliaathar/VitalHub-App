@@ -20,16 +20,29 @@ export const ContainerScheduling = styled.View`
     bottom: 0;
     border-radius: 15px;
 `
-export const ContainerCard = styled.View.attrs({
+export const ContainerLocal = styled.View`
+    justify-content: center;
+    align-items: center;
+`
+
+export const ContainerLocalInfo = styled.View`
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+`
+export const ContainerCard = styled.TouchableOpacity.attrs({
     shadowColor: "#000000",
     shadowOffset: {
-      width: 4,
-      height: 4,
+        width: 4,
+        height: 4,
     },
     shadowOpacity: 0.08,
     shadowRadius: 15,
     elevation: 4,
-  })`
+})`
     width: 320px;
     height: 102px;
     border-radius: 5px;

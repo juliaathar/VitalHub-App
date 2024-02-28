@@ -41,7 +41,7 @@ export const CalendarComponent = () => {
             hideArrows={true}
 
             theme={{
-                selectedDayBackgroundColor: '#49B3BA',
+                selectedDayBackgroundColor: '#49B3BA', 
                 selectedDayTextColor: '#FFFFFF',
                 dayBackgroundColor: 'transparent'
             }}

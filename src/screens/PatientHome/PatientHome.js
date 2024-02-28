@@ -14,6 +14,7 @@ import AppointmentModal from "../../components/AppointmentModal/AppointmentModal
 import { FontAwesome } from "@expo/vector-icons"
 import { ButtonSchedule } from "../../components/ButtonSchedule/ButtonSchedule";
 import { SchedulingModal } from "../../components/SchedulingModal/SchedulingModal";
+import { CardDoctorHome } from "../../components/CardDoctorHome/CardDoctorHome";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -76,7 +77,7 @@ export const PatientHome = ({ navigation }) => {
 
                 renderItem={({ item }) =>
                     statusLista == item.situacao && (
-                        <Card
+                        <CardDoctorHome
                             situacao={item.situacao}
                             onPressCancel={() => setShowModalCancel(true)}
                             onPressAppointment={() => setShowModalAppointment(true)}

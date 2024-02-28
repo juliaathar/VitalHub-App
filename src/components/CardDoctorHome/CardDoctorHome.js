@@ -5,18 +5,18 @@ import { TextHome, TypeExam } from "../HomeHeader/Style";
 import { View } from "react-native";
 import { HourCard, TextHour } from "../HourCard/Style";
 import { AntDesign } from "@expo/vector-icons"
-import { ButtonCard, ButtonText } from "./Style";
+import { ButtonCard, ButtonText } from "../Card/Style";
 
-export const Card = ({
+export const CardDoctorHome = ({
     situacao = "pendente",
     onPressCancel,
     onPressAppointment,
 }) => {
     return (
         <ContainerCard>
-            <CardIcon source={{ uri: "https://github.com/gabrielarosa1309.png" }} />
+            <CardIcon source={{ uri: "https://github.com/juliaathar.png" }} />
             <CardData>
-                <Title>Gabriela Ramos</Title>
+                <Title>Dra. Júlia</Title>
                 <View style={{ flexDirection: "row", gap: 5, marginBottom: 11 }}>
                     <TextHome>22 anos</TextHome>
                     <TextHome>•</TextHome>
@@ -49,5 +49,5 @@ export const Card = ({
                 </View>
             </CardData>
         </ContainerCard>
-    );
+    )
 }
