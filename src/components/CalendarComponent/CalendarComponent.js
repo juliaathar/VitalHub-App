@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { StyleSheet } from 'react-native';
 import { Calendar, LocaleConfig } from 'react-native-calendars';
 
 LocaleConfig.locales['fr'] = {
@@ -24,25 +25,32 @@ LocaleConfig.locales['fr'] = {
     dayNamesShort: ['Seg', 'Ter', 'Qua.', 'Quin', 'Sex', 'Sab', 'Dom'],
 };
 
-
 export const CalendarComponent = () => {
 
     const [selected, setSelected] = useState('')
 
     return (
         <Calendar
-        style={{
-            width: 318,
-            backgroundColor: 'transparent'
-        }}
-        onDayPress={day => {
-            setSelected(day.dateString);
-          }}
-          markedDates={{
-            [selected]: {selected: true, disableTouchEvent: true, selectedDotColor: 'orange'}
-          }}
+            style={{
+                width: 318,
+                backgroundColor: 'transparent'
+            }}
+            onDayPress={day => {
+                setSelected(day.dateString);
+            }}
+            hideArrows={true}
+
+            theme={{
+                selectedDayBackgroundColor: '#49B3BA',
+                selectedDayTextColor: '#FFFFFF',
+                dayBackgroundColor: 'transparent'
+            }}
+
+            markedDates={{
+                [selected]: { selected: true, disableTouchEvent: true }
+            }}
         />
     )
 
-    
+
 }
