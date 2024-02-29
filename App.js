@@ -17,6 +17,7 @@ import { DoctorHome } from './src/screens/DoctorHome/DoctorHome';
 import { SelectDoctor } from './src/screens/SelectDoctor/SelectDoctor';
 import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { AppointmentLocal } from './src/screens/AppointmentLocal/AppointmentLocal';
+import { Prescription } from './src/screens/Prescription/Prescription';
 
 //instancia do StackNavigator
 
@@ -170,6 +171,14 @@ export default function App() {
           component={AppointmentLocal}
           //título da tela
           options={{ title: 'AppointmentLocal' }}
+        />
+        <Stack.Screen
+          //nome da tela
+          name='Prescription'
+          //componente que sera chamado   
+          component={Prescription}
+          //título da tela
+          options={{ title: 'Prescription' }}
         />
 
       </Stack.Navigator>

@@ -37,14 +37,12 @@ export const ResumeModal = ({
                     <LabelInput>Tipo da consulta</LabelInput>
                     <DefaultTextStart>{typeAppointment}</DefaultTextStart>
 
-                    <View style={{ width: '90%', marginTop: 30 }}>
-                        <Button>
-                            <ButtonTitle>Confirmar</ButtonTitle>
-                        </Button>
-                        <ButtonSecondary onPress={() => setShowModalResume(false)}>
-                            <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
-                        </ButtonSecondary>
-                    </View>
+                    <Button>
+                        <ButtonTitle>Confirmar</ButtonTitle>
+                    </Button>
+                    <ButtonSecondary onPress={() => setShowModalResume(false)}>
+                        <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
+                    </ButtonSecondary>
                 </ContainerResume>
             </View>
         </Modal>
