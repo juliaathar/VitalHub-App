@@ -12,6 +12,13 @@ export const DefaultText = styled.Text`
     text-align: center;
     width: 320;
 `
+export const DefaultTextBlack = styled(DefaultText)`
+color: black;
+`
+export const DefaultTextStart = styled(DefaultText)`
+text-align: start;
+padding-left: 16px;
+`
 
 export const DefaultTextBlue = styled(DefaultText)`
     color: #496BBA;

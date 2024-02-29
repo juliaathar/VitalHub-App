@@ -24,6 +24,16 @@ export const ContainerLocal = styled.View`
     justify-content: center;
     align-items: center;
 `
+export const ContainerResume = styled.View`
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 12px;
+`
 
 export const ContainerLocalInfo = styled.View`
     width: 100%;
