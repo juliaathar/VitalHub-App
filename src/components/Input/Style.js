@@ -42,7 +42,8 @@ export const InputDescription = styled(Input)`
 export const InputResult = styled.View`
    width: 90%;
    height: 103px;
-   background-color: #F5F3F3;
+   background-color: #F5F3F3; 
+   border-radius: 5px;
 `
 export const InputProfile = styled(Input).attrs({
     placeholderTextColor: '#33303E',

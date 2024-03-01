@@ -36,7 +36,7 @@ export const Prescription = () => {
 
                 <PhotoInput />
 
-                <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 60 }}>
+                <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 60, marginBottom:20 }}>
                     <ButtonPhoto>
                         <MaterialIcons
                             name="add-a-photo"
