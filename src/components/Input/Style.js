@@ -39,6 +39,11 @@ export const InputDescription = styled(Input)`
     height: 121;
     text-align: start;
 `
+export const InputResult = styled.View`
+   width: 90%;
+   height: 103px;
+   background-color: #F5F3F3;
+`
 export const InputProfile = styled(Input).attrs({
     placeholderTextColor: '#33303E',
   })`

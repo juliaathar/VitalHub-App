@@ -34,6 +34,24 @@ export const ContainerResume = styled.View`
     align-self: center;
     gap: 12px;
 `
+export const ContainerPhoto = styled.View`
+    width: 90%;
+    height: 111px;
+    background-color: #F5F3F3;
+    border-radius: 5px;
+    justify-content: center;
+
+    align-items: center;
+    margin-top: 10px;
+`
+export const BoxPhoto = styled.View`
+    width: 213px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+`
+
 
 export const ContainerLocalInfo = styled.View`
     width: 100%;
