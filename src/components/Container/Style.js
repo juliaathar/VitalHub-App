@@ -88,8 +88,8 @@ export const CardData = styled.View`
 export const ContainerScroll = styled.ScrollView.attrs({
     showsVerticalScrollIndicator: false,
     contentContainerStyle: {
-        width: 320,
-        height: 600,
+        // width: 320,
+        // height: 600,
         flexGrow: 1,
         justifyContent: 'center',
         alignItems: 'center',

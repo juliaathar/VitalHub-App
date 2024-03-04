@@ -18,7 +18,7 @@ export const Prescription = () => {
 
             <DefaultText>Cliníco geral       CRM-15286</DefaultText>
 
-            <ContainerScroll>
+            <ContainerScroll >
                 <LabelInput>Descrição da consulta</LabelInput>
                 <InputDescription
                     placeholder="Descrição"
