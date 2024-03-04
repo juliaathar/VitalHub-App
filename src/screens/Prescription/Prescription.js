@@ -50,7 +50,7 @@ export const Prescription = () => {
                 </View>
 
                 <InputResult>
-                    <DefaultText>Resultado do exame de sangue : tudo normal</DefaultText>
+                    <DefaultText>Resultado do exame de sangue: tudo normal</DefaultText>
                 </InputResult>
 
                 <LinkBottom>Voltar</LinkBottom>

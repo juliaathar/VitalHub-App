@@ -15,6 +15,7 @@ import { FontAwesome } from "@expo/vector-icons"
 import { ButtonSchedule } from "../../components/ButtonSchedule/ButtonSchedule";
 import { SchedulingModal } from "../../components/SchedulingModal/SchedulingModal";
 import { CardDoctorHome } from "../../components/CardDoctorHome/CardDoctorHome";
+import AppointmentModalDoctor from "../../components/AppointmentModalDoctor/AppointmentModalDoctor";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -91,7 +92,7 @@ export const PatientHome = ({ navigation }) => {
                 setShowModalCancel={setShowModalCancel}
             />
 
-            <AppointmentModal
+            <AppointmentModalDoctor
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
             />

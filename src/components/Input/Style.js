@@ -44,6 +44,7 @@ export const InputResult = styled.View`
    height: 103px;
    background-color: #F5F3F3; 
    border-radius: 5px;
+   padding: 10px;
 `
 export const InputProfile = styled(Input).attrs({
     placeholderTextColor: '#33303E',

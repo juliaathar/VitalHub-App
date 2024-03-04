@@ -1,25 +1,26 @@
 import { Modal } from "react-native";
 import { ModalContent, ModalText, PatientModal } from "../CancelModal/Style";
 import { ButtonModal, ButtonSecondary, ButtonTitle, ButtonTitleSecondary } from "../Buttons/Style";
-import { ImageAppointent } from "./Style";
 import { Title } from "../Title/Style";
+import { ImageAppointent } from "../AppointmentModal/Style";
 
-const AppointmentModal = ({
+
+const AppointmentModalDoctor = ({
     visible, setShowModalAppointment, ...rest
 }) => {
     return (
         <Modal {...rest} visible={visible} transparent={true} animationType="fade">
             <PatientModal>
                 <ModalContent>
-                    <ImageAppointent source={{ uri: "https://github.com/gabrielarosa1309.png" }} />
+                    <ImageAppointent source={{ uri: "https://github.com/juliaathar.png" }} />
 
-                    <Title>Gabriela Ramos</Title>
+                    <Title>Dra. Júlia</Title>
 
-                    <ModalText>22 anos    gabiramos1309@gmail.com</ModalText>
+                    <ModalText>Cliníco geral   CRM-15286</ModalText>
 
                     <ButtonModal>
                         <ButtonTitle>
-                            Inserir prontuário
+                        Ver local da consulta
                         </ButtonTitle>
                     </ButtonModal>
 
@@ -34,5 +35,4 @@ const AppointmentModal = ({
         </Modal>
     );
 }
-
-export default AppointmentModal;
+export default AppointmentModalDoctor;
