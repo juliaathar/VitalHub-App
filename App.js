@@ -18,6 +18,7 @@ import { SelectDoctor } from './src/screens/SelectDoctor/SelectDoctor';
 import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { AppointmentLocal } from './src/screens/AppointmentLocal/AppointmentLocal';
 import { Prescription } from './src/screens/Prescription/Prescription';
+import { Main } from './src/screens/Main/Main';
 
 //instancia do StackNavigator
 
@@ -50,7 +51,7 @@ export default function App() {
 
       <Stack.Navigator>
 
-        <Stack.Screen
+        {/* <Stack.Screen
           //nome da tela
           name='Navigation'
           //componente que sera chamado   
@@ -59,7 +60,15 @@ export default function App() {
           options={{
             title: 'Navigation',
           }}
+        /> */}
+
+        <Stack.Screen
+          //nome da tela
+          name='Main'
+          //componente que sera chamado   
+          component={Main}
         />
+
 
         <Stack.Screen
           //nome da tela

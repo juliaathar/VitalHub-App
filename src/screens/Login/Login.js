@@ -9,6 +9,12 @@ import { CreateAccount, LinkAccount, TextAccount } from "../../components/Create
 
 
 export const Login = ({navigation}) => {
+
+    //chamar a funcao de login
+    async function Login(){
+        navigation.navigate("Main")
+    }
+
     return (
         <Container>
 
@@ -29,7 +35,7 @@ export const Login = ({navigation}) => {
             
             <LinkMedium>Esqueceu sua senha?</LinkMedium>
 
-            <Button>
+            <Button onPress={()=>Login}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
 
