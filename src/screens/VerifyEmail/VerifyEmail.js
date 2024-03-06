@@ -6,7 +6,7 @@ import { LinkBottom } from "../../components/LinkBottom/Style";
 import { Logo } from "../../components/Logo/Style";
 import { Title } from "../../components/Title/Style";
 
-export const VerifyEmail = () => {
+export const VerifyEmail = ({navigation}) => {
     return (
         <Container>
 
@@ -35,8 +35,8 @@ export const VerifyEmail = () => {
                 />
             </BoxInputNumber>
 
-            <Button>
-                <ButtonTitle>Entrar</ButtonTitle>
+            <Button onPress={() => navigation.navigate("SetPassword")}>
+                <ButtonTitle>Verificar</ButtonTitle>
             </Button>
 
             <LinkBottom>Reenviar código</LinkBottom>

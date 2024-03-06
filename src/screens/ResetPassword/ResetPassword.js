@@ -6,7 +6,7 @@ import { Input } from "../../components/Input/Style";
 import { Button, ButtonTitle } from "../../components/Buttons/Style";
 import { DefaultText } from "../../components/DefaultText/DefaultText";
 
-export const ResetPassword = () => {
+export const ResetPassword = ({navigation}) => {
     return (
 
         <Container>
@@ -21,7 +21,7 @@ export const ResetPassword = () => {
                 placeholder = "Usuário ou E-mail"
             />
 
-            <Button>
+            <Button onPress={() => navigation.navigate("VerifyEmail")}>
                 <ButtonTitle>Continuar</ButtonTitle>
             </Button>
 

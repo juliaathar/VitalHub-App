@@ -15,6 +15,10 @@ export const DefaultText = styled.Text`
 export const DefaultTextBlack = styled(DefaultText)`
 color: black;
 `
+export const DefaultTextStart = styled(DefaultText)`
+align-self: flex-start;
+padding-left: 33px;
+`
 export const GrayText = styled.Text`
    font-family: 'Quicksand_500Medium';
     font-size: 16px;

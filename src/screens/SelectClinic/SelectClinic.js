@@ -3,7 +3,7 @@ import { CardClinic } from "../../components/CardClinic/CardClinic"
 import { ContainerSelect, SelectClinicView } from "../../components/ContainerSelect/Style"
 import { Title } from "../../components/Title/Style"
 
-export const SelectClinic = () => {
+export const SelectClinic = ({navigation}) => {
     return (
         <ContainerSelect>
             <SelectClinicView>
@@ -23,7 +23,7 @@ export const SelectClinic = () => {
                     address={"São Paulo, SP"}
                     rate={"5"}
                 />
-                <Button>
+                <Button onPress={() => navigation.navigate("SelectDoctor")}>
                     <ButtonTitle>
                         Continuar
                     </ButtonTitle>

@@ -100,6 +100,7 @@ export const PatientHome = ({ navigation }) => {
             <SchedulingModal
                 visible={showSchedulingModal}
                 setshowSchedulingModal={setshowSchedulingModal}
+                navigation={navigation}
             />
 
             <ButtonSchedule onPress={() => setshowSchedulingModal(true)} />

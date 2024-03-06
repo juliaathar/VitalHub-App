@@ -3,7 +3,7 @@ import { CardDoctor } from "../../components/CardDoctor/CardDoctor"
 import { ContainerSelect, SelectClinicView } from "../../components/ContainerSelect/Style"
 import { Title } from "../../components/Title/Style"
 
-export const SelectDoctor = () => {
+export const SelectDoctor = ({navigation}) => {
     return (
         <ContainerSelect>
             <SelectClinicView>
@@ -20,13 +20,13 @@ export const SelectDoctor = () => {
                     name="Dra Júlia"
                     speciality="Demartologa, Esteticista"
                 />
-                <Button>
+                <Button onPress={() => navigation.navigate("SelectDate")}>
                     <ButtonTitle>
                         Continuar
                     </ButtonTitle>
                 </Button>
 
-                <ButtonSecondary>
+                <ButtonSecondary onPress={() => navigation.navigate("SelectDoctor")}>
                     <ButtonTitleSecondary>
                         Cancelar
                     </ButtonTitleSecondary>

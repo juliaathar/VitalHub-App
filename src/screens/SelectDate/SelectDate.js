@@ -1,11 +1,11 @@
-import { useState } from "react"
-import { Button, ButtonSecondary, ButtonTitle, ButtonTitleSecondary } from "../../components/Buttons/Style"
+import { Button, ButtonSecondary, ButtonTitle, ButtonTitleSecondary } from "../../components/Buttons/Style";
+import { ContainerSelect, SelectClinicView } from "../../components/ContainerSelect/Style";
+import { Subtitle, Title } from "../../components/Title/Style";
 import { CalendarComponent } from "../../components/CalendarComponent/CalendarComponent"
-import { ContainerSelect, SelectClinicView } from "../../components/ContainerSelect/Style"
-import { Input } from "../../components/Input/Style"
-import { InputSelect } from "../../components/InputSelect/InputSelect"
-import { Subtitle, Title } from "../../components/Title/Style"
 import { ResumeModal } from "../../components/ResumeModal/ResumeModal"
+import { useState } from "react";
+import { InputSelect } from "../../components/InputSelect/InputSelect"
+
 
 export const SelectDate = () => {
 
@@ -25,10 +25,11 @@ export const SelectDate = () => {
                     <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
                 </ButtonSecondary>
 
-                <ResumeModal 
+                <ResumeModal
                     visible={showModalResume}
                     setShowModalResume={setShowModalResume}
                 />
+
             </SelectClinicView>
         </ContainerSelect>
     )

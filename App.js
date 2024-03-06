@@ -64,20 +64,21 @@ export default function App() {
 
         <Stack.Screen
           //nome da tela
-          name='Main'
-          //componente que sera chamado   
-          component={Main}
-        />
-
-
-        <Stack.Screen
-          //nome da tela
           name='Login'
           //componente que sera chamado   
           component={Login}
           //título da tela
           options={{ title: 'Login' }}
         />
+        
+        <Stack.Screen
+          //nome da tela
+          name='Main'
+          //componente que sera chamado   
+          component={Main}
+        />
+
+
 
         <Stack.Screen
           //nome da tela

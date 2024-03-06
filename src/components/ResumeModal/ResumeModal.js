@@ -1,7 +1,7 @@
 import { Modal, View } from "react-native"
 import { ContainerResume } from "../Container/Style"
 import { Title } from "../Title/Style"
-import { DefaultText, DefaultTextBlack, DefaultTextStart } from "../DefaultText/DefaultText"
+import { DefaultTextBlack, DefaultTextStart } from "../DefaultText/DefaultText"
 import { LabelInput } from "../Input/Style"
 import { Button, ButtonSecondary, ButtonTitle, ButtonTitleSecondary } from "../Buttons/Style"
 

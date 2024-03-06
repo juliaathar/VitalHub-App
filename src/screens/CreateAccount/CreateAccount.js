@@ -7,8 +7,8 @@ import { Input } from "../../components/Input/Style";
 import { Button, ButtonTitle } from "../../components/Buttons/Style";
 import { LinkBottom } from "../../components/LinkBottom/Style";
 
-export const CreateAccount = ({navigation}) => {
-    return(
+export const CreateAccount = ({ navigation }) => {
+    return (
         <Container>
             <Logo source={require('../../assets/logo.png')} />
 
@@ -16,21 +16,21 @@ export const CreateAccount = ({navigation}) => {
 
             <DefaultText>Insira seu endereço de e-mail e senha para realizar seu cadastro.</DefaultText>
 
-            <Input  
-                placeholder = "Usuário ou E-mail"
+            <Input
+                placeholder="Usuário ou E-mail"
             />
-            <Input  
-                placeholder = "Senha"
+            <Input
+                placeholder="Senha"
             />
-            <Input  
-                placeholder = "Confirmar Senha"
+            <Input
+                placeholder="Confirmar Senha"
             />
 
             <Button>
                 <ButtonTitle>Cadastrar</ButtonTitle>
             </Button>
 
-            <LinkBottom onPress = {() => navigation.navigate("Login")}>Cancelar</LinkBottom>
+            <LinkBottom onPress={() => navigation.navigate("Login")}>Cancelar</LinkBottom>
         </Container>
     );
 }

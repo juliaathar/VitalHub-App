@@ -9,7 +9,7 @@ import { Input } from "../Input/Style";
 import { Button, ButtonSecondary, ButtonTitle, ButtonTitleSecondary } from "../Buttons/Style";
 
 export const SchedulingModal = ({
-    visible, setshowSchedulingModal, ...rest
+    navigation, visible, setshowSchedulingModal, ...rest
 }) => {
 
     const [statusLista, setStatusLista] = useState("rotina")
@@ -44,7 +44,7 @@ export const SchedulingModal = ({
                 </View>
                 <Input placeholder="Informe a localização" />
 
-                <Button>
+                <Button onPress={() => navigation.navigate("SelectClinic")}>
                     <ButtonTitle>Continuar</ButtonTitle>
                 </Button>
 

@@ -12,7 +12,7 @@ export const Login = ({navigation}) => {
 
     //chamar a funcao de login
     async function Login(){
-        navigation.navigate("Main")
+        navigation.replace("Main")
     }
 
     return (
@@ -33,9 +33,9 @@ export const Login = ({navigation}) => {
             />
 
             
-            <LinkMedium>Esqueceu sua senha?</LinkMedium>
+            <LinkMedium onPress={() => navigation.navigate("ResetPassword")}>Esqueceu sua senha?</LinkMedium>
 
-            <Button onPress={()=>Login}>
+            <Button onPress={()=>Login()}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
 
