@@ -29,7 +29,7 @@ export const SelectClinic = ({navigation}) => {
                     </ButtonTitle>
                 </Button>
 
-                <ButtonSecondary>
+                <ButtonSecondary onPress={() => navigation.navigate("PatientHome")}>
                     <ButtonTitleSecondary>
                         Cancelar
                     </ButtonTitleSecondary>

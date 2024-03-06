@@ -7,7 +7,7 @@ import { useState } from "react";
 import { InputSelect } from "../../components/InputSelect/InputSelect"
 
 
-export const SelectDate = () => {
+export const SelectDate = ({navigation}) => {
 
     const [showModalResume, setShowModalResume] = useState(false);
 
@@ -21,7 +21,7 @@ export const SelectDate = () => {
                 <Button onPress={() => setShowModalResume(true)}>
                     <ButtonTitle>Confirmar</ButtonTitle>
                 </Button>
-                <ButtonSecondary>
+                <ButtonSecondary onPress={() => navigation.navigate("SelectDoctor")}>
                     <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
                 </ButtonSecondary>
 
