@@ -10,7 +10,7 @@ import { InputSelect } from "../../components/InputSelect/InputSelect"
 export const SelectDate = ({navigation}) => {
 
     const [showModalResume, setShowModalResume] = useState(false);
-
+    
     return (
         <ContainerSelect>
             <SelectClinicView>

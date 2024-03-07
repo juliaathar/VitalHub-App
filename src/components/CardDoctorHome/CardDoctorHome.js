@@ -12,6 +12,7 @@ export const CardDoctorHome = ({
     situacao = "pendente",
     onPressCancel,
     onPressAppointment,
+    navigation
 }) => {
     const handlePress = () => {
         if (onPressAppointment) {
@@ -42,9 +43,11 @@ export const CardDoctorHome = ({
                         <ButtonCard onPress={onPressCancel}>
                             <ButtonText situacao={situacao}>Cancelar</ButtonText>
                         </ButtonCard>
-                    ) : (
-                      <></>
-                    )}
+                    ) :  (
+                        <ButtonCard onPress={() => navigation.navigate("Prescription")}>
+                            <ButtonText situacao={situacao}>Ver Prontuario</ButtonText>
+                        </ButtonCard>
+                    ) }
                 </View>
             </View>
         </ContainerCard>

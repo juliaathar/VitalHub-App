@@ -7,7 +7,7 @@ import { Input, InputDescription, InputResult, LabelInput } from "../../componen
 import { LinkBottom, LinkCancel } from "../../components/LinkBottom/Style"
 import { PhotoInput } from "../../components/PhotoInput/PhotoInput"
 import { Title } from "../../components/Title/Style"
-import { MaterialIcons } from "@expo/vector-icons"  
+import { MaterialIcons } from "@expo/vector-icons"
 
 export const Prescription = () => {
     return (
@@ -20,23 +20,28 @@ export const Prescription = () => {
 
             <ContainerScroll >
                 <LabelInput>Descrição da consulta</LabelInput>
-                <InputDescription
-                    placeholder="Descrição"
-                />
+                <InputResult>
+                    <DefaultText>O paciente possuí uma infecção no
+                        ouvido. Necessário repouse de 2 dias
+                        e acompanhamento médico constante</DefaultText>
+                </InputResult>
                 <LabelInput>Diagnóstico do paciente</LabelInput>
-                <Input
-                    placeholder="Diagnóstico"
-                />
+                <InputResult>
+                    <DefaultText>Infecção no ouvido</DefaultText>
+                </InputResult>
                 <LabelInput>Prescrição médica</LabelInput>
-                <InputDescription
-                    placeholder="Prescrição médica"
-                />
+                <InputResult>
+                    <DefaultText>Medicamento: Advil</DefaultText>
+                    <DefaultText>Dosagem: 50 mg</DefaultText>
+                    <DefaultText>Frequência: 3 vezes ao dia</DefaultText>
+                    <DefaultText>Duração: 3 dias</DefaultText>
+                </InputResult>
 
                 <LabelInput>Exames médicos</LabelInput>
 
                 <PhotoInput />
 
-                <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 60, marginBottom:20 }}>
+                <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 60, marginBottom: 20 }}>
                     <ButtonPhoto>
                         <MaterialIcons
                             name="add-a-photo"

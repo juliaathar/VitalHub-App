@@ -49,7 +49,11 @@ export default function App() {
     // envolve a estrutura da navegacao
     <NavigationContainer>
 
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
+      >
 
         {/* <Stack.Screen
           //nome da tela

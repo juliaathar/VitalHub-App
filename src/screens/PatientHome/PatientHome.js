@@ -28,6 +28,8 @@ export const PatientHome = ({ navigation }) => {
     const [showModalAppointment, setShowModalAppointment] = useState(false);
     const [showSchedulingModal, setshowSchedulingModal] = useState(false);
 
+    const [profile, setProfile] = useState("Paciente")
+
 
     return (
         <ContainerUser>
@@ -40,7 +42,7 @@ export const PatientHome = ({ navigation }) => {
             <CalendarList />
 
             <StatusBox>
-                
+
                 <HomeButton
                     textButton={"Agendadas"}
                     clickButton={statusLista === "pendente"}
@@ -68,6 +70,7 @@ export const PatientHome = ({ navigation }) => {
                 renderItem={({ item }) =>
                     statusLista == item.situacao && (
                         <CardDoctorHome
+                            navigation={navigation}
                             situacao={item.situacao}
                             onPressCancel={() => setShowModalCancel(true)}
                             onPressAppointment={() => setShowModalAppointment(true)}
