@@ -1,21 +1,16 @@
-import { Image, Text, View } from "react-native";
 import { ContainerUser } from "../../components/Container/Style";
-import { GradientBackground, HomeHeader, TextHome } from "../../components/HomeHeader/Style";
-import { UserIcon } from "../../components/UserIcon/Style";
-import { TitleWhite } from "../../components/Title/Style";
+import { GradientBackground } from "../../components/HomeHeader/Style";
 import CalendarList from "../../components/CalendarList/CalendarList";
-import { Card } from "../../components/Card/Card";
 import { useState } from "react";
 import { HomeButton } from "../../components/HomeButton/HomeButton";
 import { StatusBox } from "../../components/Buttons/Style";
 import { List } from "../../components/List/Style";
 import CancelModal from "../../components/CancelModal/CancelModal";
-import AppointmentModal from "../../components/AppointmentModal/AppointmentModal";
-import { FontAwesome } from "@expo/vector-icons"
 import { ButtonSchedule } from "../../components/ButtonSchedule/ButtonSchedule";
 import { SchedulingModal } from "../../components/SchedulingModal/SchedulingModal";
 import { CardDoctorHome } from "../../components/CardDoctorHome/CardDoctorHome";
 import AppointmentModalDoctor from "../../components/AppointmentModalDoctor/AppointmentModalDoctor";
+import { HomeHeader } from "../../components/HomeHeader/HomeHeader";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -37,21 +32,15 @@ export const PatientHome = ({ navigation }) => {
     return (
         <ContainerUser>
             <GradientBackground>
-                <HomeHeader>
-                    <UserIcon source={{ uri: "https://github.com/gabrielarosa1309.png" }} />
-                    <View>
-                        <TextHome>Bem-vinda</TextHome>
-                        <TitleWhite>Gabriela Ramos</TitleWhite>
-                    </View>
-
-                    <Image style={{ marginLeft: 90 }} source={require('../../assets/bell.png')} />
-                </HomeHeader>
+                <HomeHeader
+                    navigation={navigation}
+                />
             </GradientBackground>
 
             <CalendarList />
 
             <StatusBox>
-
+                
                 <HomeButton
                     textButton={"Agendadas"}
                     clickButton={statusLista === "pendente"}
@@ -95,6 +84,7 @@ export const PatientHome = ({ navigation }) => {
             <AppointmentModalDoctor
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
+                navigation={navigation}
             />
 
             <SchedulingModal

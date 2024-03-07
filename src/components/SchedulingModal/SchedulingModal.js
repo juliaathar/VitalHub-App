@@ -14,11 +14,16 @@ export const SchedulingModal = ({
 
     const [statusLista, setStatusLista] = useState("rotina")
 
+    async function handleClose(screen) {
+        await setshowSchedulingModal(false)
+        navigation.navigate(screen)
+    }
+
     return (
         <Modal {...rest} visible={visible} transparent={true} animationType="fade">
             <ContainerScheduling>
                 <Title>Agendar consulta</Title>
-                <View style={{marginRight: 200}}>
+                <View style={{ marginRight: 200 }}>
                     <Subtitle>Qual o nível da consulta</Subtitle>
                 </View>
                 <AppointmentLevel>
@@ -39,12 +44,12 @@ export const SchedulingModal = ({
                     />
                 </AppointmentLevel>
 
-                <View style={{marginRight: 150}}>
+                <View style={{ marginRight: 150 }}>
                     <Subtitle>Informe a localização desejada</Subtitle>
                 </View>
                 <Input placeholder="Informe a localização" />
 
-                <Button onPress={() => navigation.navigate("SelectClinic")}>
+                <Button onPress={() => handleClose("SelectClinic")}>
                     <ButtonTitle>Continuar</ButtonTitle>
                 </Button>
 
@@ -54,7 +59,7 @@ export const SchedulingModal = ({
                     </ButtonTitleSecondary>
                 </ButtonSecondary>
             </ContainerScheduling>
-            
+
         </Modal>
     );
 }

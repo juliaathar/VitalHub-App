@@ -26,7 +26,7 @@ export const SelectDoctor = ({navigation}) => {
                     </ButtonTitle>
                 </Button>
 
-                <ButtonSecondary onPress={() => navigation.navigate("SelectClinic")}>
+                <ButtonSecondary onPress={() => navigation.navigate("Main")}>
                     <ButtonTitleSecondary>
                         Cancelar
                     </ButtonTitleSecondary>

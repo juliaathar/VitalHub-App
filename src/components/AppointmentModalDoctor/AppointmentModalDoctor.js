@@ -6,7 +6,7 @@ import { ImageAppointent } from "../AppointmentModal/Style";
 
 
 const AppointmentModalDoctor = ({
-    visible, setShowModalAppointment, ...rest
+    navigation,visible, setShowModalAppointment, ...rest
 }) => {
     return (
         <Modal {...rest} visible={visible} transparent={true} animationType="fade">
@@ -18,7 +18,7 @@ const AppointmentModalDoctor = ({
 
                     <ModalText>Cliníco geral   CRM-15286</ModalText>
 
-                    <ButtonModal>
+                    <ButtonModal onPress={() => navigation.navigate("AppointmentLocal")}>
                         <ButtonTitle>
                         Ver local da consulta
                         </ButtonTitle>

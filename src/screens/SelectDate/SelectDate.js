@@ -21,7 +21,7 @@ export const SelectDate = ({navigation}) => {
                 <Button onPress={() => setShowModalResume(true)}>
                     <ButtonTitle>Confirmar</ButtonTitle>
                 </Button>
-                <ButtonSecondary onPress={() => navigation.navigate("SelectDoctor")}>
+                <ButtonSecondary onPress={() => navigation.navigate("Main")}>
                     <ButtonTitleSecondary>Cancelar</ButtonTitleSecondary>
                 </ButtonSecondary>
 

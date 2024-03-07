@@ -1,14 +1,19 @@
-// HomeHeader/Style.js
 import styled from "styled-components";
 import { LinearGradient } from 'expo-linear-gradient';
 
-export const HomeHeader = styled.View`
+export const ViewHeader = styled.View`
   width:  100%;
   height: 144;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 20;
+`;
+export const BoxUser = styled.TouchableOpacity`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 
 export const TextHome = styled.Text`
