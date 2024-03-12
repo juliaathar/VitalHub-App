@@ -2,6 +2,7 @@ import { ButtonSecondary, ButtonTitleSecondary } from "../../components/Buttons/
 import { ContainerLocal, ContainerLocalInfo } from "../../components/Container/Style"
 import { DefaultText } from "../../components/DefaultText/DefaultText"
 import { InputBox, InputProfile, InputProfileBox, LabelInput, SmallInput } from "../../components/Input/Style"
+import { Map } from "../../components/Map/Map"
 import { MapImg } from "../../components/MapImg/Style"
 import { Title } from "../../components/Title/Style"
 
@@ -12,30 +13,32 @@ export const AppointmentLocal = ({
     navigation
 }) => {
     return (
-        <ContainerLocal>
-            <MapImg source={require('../../assets/map.png')} />
-            <ContainerLocalInfo>
-                <Title>{clinicName}</Title>
-                <DefaultText>{location}</DefaultText>
 
-                <LabelInput>Endereço</LabelInput>
-                <InputProfile placeholder={addres} />
+        <Map/>
+        // <ContainerLocal>
+        //     <MapImg source={require('../../assets/map.png')} />
+        //     <ContainerLocalInfo>
+        //         <Title>{clinicName}</Title>
+        //         <DefaultText>{location}</DefaultText>
 
-                <InputProfileBox>
-                    <InputBox>
-                        <LabelInput>Número</LabelInput>
-                        <SmallInput placeholder="528" />
-                    </InputBox>
-                    <InputBox>
-                        <LabelInput>Bairro</LabelInput>
-                        <SmallInput placeholder="Moema-SP" />
-                    </InputBox>
+        //         <LabelInput>Endereço</LabelInput>
+        //         <InputProfile placeholder={addres} />
 
-                </InputProfileBox>
-                <ButtonSecondary onPress={() => navigation.replace("Main")}>
-                    <ButtonTitleSecondary>Voltar</ButtonTitleSecondary>
-                </ButtonSecondary>
-            </ContainerLocalInfo>
-        </ContainerLocal>
+        //         <InputProfileBox>
+        //             <InputBox>
+        //                 <LabelInput>Número</LabelInput>
+        //                 <SmallInput placeholder="528" />
+        //             </InputBox>
+        //             <InputBox>
+        //                 <LabelInput>Bairro</LabelInput>
+        //                 <SmallInput placeholder="Moema-SP" />
+        //             </InputBox>
+
+        //         </InputProfileBox>
+        //         <ButtonSecondary onPress={() => navigation.replace("Main")}>
+        //             <ButtonTitleSecondary>Voltar</ButtonTitleSecondary>
+        //         </ButtonSecondary>
+        //     </ContainerLocalInfo>
+        // </ContainerLocal>
     )
 }
