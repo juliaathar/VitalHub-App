@@ -69,6 +69,7 @@ export const Map = () => {
                 initialPosition != null
                     ? (
                         <MapView
+                            // userInterfaceStyle='dark'
                             ref={mapReference}
                             initialRegion={{
                                 latitude: initialPosition.coords.latitude,
@@ -124,7 +125,8 @@ export const Map = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        width:"100%",
+        height: 400,
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',

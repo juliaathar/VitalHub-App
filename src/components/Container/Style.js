@@ -56,6 +56,7 @@ export const BoxPhoto = styled.View`
 export const ContainerLocalInfo = styled.View`
     width: 100%;
     height: 60%;
+    z-index: 2;
     background-color: white;
     border-radius: 15px;
     justify-content: center;
