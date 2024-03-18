@@ -6,7 +6,7 @@ import { useEffect, useState, useRef } from 'react';
 import { FontAwesome } from "@expo/vector-icons"
 import * as MediaLibrary from "expo-media-library"
 
-export const Camera = () => {
+export const CameraScreen = () => {
 
     const cameraRef = useRef(null);
 
@@ -80,7 +80,7 @@ export const Camera = () => {
         />
       </TouchableOpacity>
 
-      <Modal animationType='slide' transparent={falese} visible={openModal}>
+      <Modal animationType='slide' transparent={false} visible={openModal}>
         <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 30 }}>
           <Image style={{ width: '100%', height: 500, borderRadius: 10 }} source={{ uri: photo }} />
           <View style={{ margin: 15, flexDirection: 'row' }}>
@@ -104,3 +104,53 @@ export const Camera = () => {
     </View>
     )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  camera: {
+    flex: 1,
+    width: '100%',
+    height: '80%'
+  },
+  viewFlip: {
+    flex: 1,
+    backgroundColor: 'transparent',
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent: "center"
+  },
+  btnFlip: {
+    padding: 15
+  },
+  txtFlip: {
+    fontSize: 20,
+    color: "#fff",
+    marginBottom: 20
+  },
+  btnCapture: {
+    margin: 20,
+    padding: 20,
+    borderRadius: 15,
+    backgroundColor: "#121212",
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  btnCancel:{
+    padding: 20,
+    borderRadius: 15,
+    backgroundColor: "transparent",
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  btnSave:{
+    padding: 20,
+    backgroundColor: "transparent",
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});

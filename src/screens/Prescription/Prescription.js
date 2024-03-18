@@ -9,7 +9,7 @@ import { PhotoInput } from "../../components/PhotoInput/PhotoInput"
 import { Title } from "../../components/Title/Style"
 import { MaterialIcons } from "@expo/vector-icons"
 
-export const Prescription = () => {
+export const Prescription = ({navigation}) => {
     return (
         <ContainerUser>
             <ImageUser source={require('../../assets/doctorUser.png')} />
@@ -42,24 +42,24 @@ export const Prescription = () => {
                 <PhotoInput />
 
                 <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", gap: 60, marginBottom: 20 }}>
-                    <ButtonPhoto>
-                        <MaterialIcons
-                            name="add-a-photo"
-                            size={20}
-                            color={'#FFFFFF'}
-                        />
-                        <ButtonTitlePhoto>Enviar</ButtonTitlePhoto>
-                    </ButtonPhoto>
+                    <ButtonPhoto onPress={() => navigation.navigate("CameraScreen")}>
+                    <MaterialIcons
+                        name="add-a-photo"
+                        size={20}
+                        color={'#FFFFFF'}
+                    />
+                    <ButtonTitlePhoto>Enviar</ButtonTitlePhoto>
+                </ButtonPhoto>
 
-                    <LinkCancel>Cancelar</LinkCancel>
-                </View>
+                <LinkCancel>Cancelar</LinkCancel>
+            </View>
 
-                <InputResult>
-                    <DefaultText>Resultado do exame de sangue: tudo normal</DefaultText>
-                </InputResult>
+            <InputResult>
+                <DefaultText>Resultado do exame de sangue: tudo normal</DefaultText>
+            </InputResult>
 
-                <LinkBottom>Voltar</LinkBottom>
-            </ContainerScroll>
-        </ContainerUser>
+            <LinkBottom>Voltar</LinkBottom>
+        </ContainerScroll>
+        </ContainerUser >
     )
 }

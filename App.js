@@ -19,6 +19,8 @@ import { SelectDate } from './src/screens/SelectDate/SelectDate';
 import { AppointmentLocal } from './src/screens/AppointmentLocal/AppointmentLocal';
 import { Prescription } from './src/screens/Prescription/Prescription';
 import { Main } from './src/screens/Main/Main';
+import { CameraScreen } from './src/components/Camera/Camera';
+
 
 //instancia do StackNavigator
 
@@ -91,6 +93,14 @@ export default function App() {
           component={ResetPassword}
           //título da tela
           options={{ title: 'Reset Password' }}
+        />
+        <Stack.Screen
+          //nome da tela
+          name='CameraScreen'
+          //componente que sera chamado   
+          component={CameraScreen}
+          //título da tela
+          options={{ title: 'CameraScreen' }}
         />
 
         <Stack.Screen
